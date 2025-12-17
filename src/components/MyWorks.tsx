@@ -20,7 +20,7 @@ const artworks = [
     year: "2024",
     medium: "Mixed media on wall",
     dimensions: "Large scale",
-    description: "Striking cat mural in studio workspace with vibrant teal and geometric patterns",
+    description: "Striking cat mural in studio workspace with vibrant teal patterns",
   },
   {
     id: 2,
