@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import MisipiLogo from "./MisipiLogo";
 import SettingsPopover from "@/components/SettingsPopover";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { NAVIGATION } from "@/lib/constants";
+import { navigation } from "@/config";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,7 +10,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > NAVIGATION.SCROLL_THRESHOLD);
+      setIsScrolled(window.scrollY > navigation.scrollThreshold);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -20,7 +20,7 @@ const Navigation = () => {
     const element = document.getElementById(id);
     if (element) {
       const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - NAVIGATION.SCROLL_OFFSET;
+      const offsetPosition = elementPosition + window.pageYOffset - navigation.scrollOffset;
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
@@ -34,25 +34,25 @@ const Navigation = () => {
         isScrolled ? "shadow-soft" : ""
       }`}
     >
-      <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-8">
+        <div className="flex items-center justify-between h-24">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="font-display font-semibold text-lg tracking-wide uppercase"
+            className="font-display font-semibold text-xl tracking-wide uppercase"
           >
-            <MisipiLogo animated={false} />
+            <MisipiLogo animated={false} className="text-3xl" />
           </button>
 
-          <div className="hidden md:flex items-center gap-8 absolute left-1/2 -translate-x-1/2">
+          <div className="hidden md:flex items-center gap-12 absolute left-1/2 -translate-x-1/2">
             <button
               onClick={() => scrollToSection("about")}
-              className="font-display text-sm tracking-wider uppercase text-foreground hover:text-primary transition-colors duration-300"
+              className="font-display text-2xl font-bold tracking-wider uppercase text-foreground hover:text-primary transition-colors duration-300"
             >
               {t("nav.about")}
             </button>
             <button
               onClick={() => scrollToSection("works")}
-              className="font-display text-sm tracking-wider uppercase text-foreground hover:text-primary transition-colors duration-300"
+              className="font-display text-2xl font-bold tracking-wider uppercase text-foreground hover:text-primary transition-colors duration-300"
             >
               {t("nav.works")}
             </button>

@@ -20,40 +20,32 @@ const SettingsPopover = () => {
         <Button
           variant="ghost"
           size="icon"
-          className="transition-all duration-300"
+          className="transition-all duration-300 h-12 w-12"
           aria-label="Settings"
         >
-          <Settings className="h-5 w-5" />
+          <Settings className="!h-10 !w-10" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-56" align="end">
         <div className="space-y-4">
           <div className="space-y-2">
             <h4 className="font-medium text-sm">Language</h4>
-            <RadioGroup value={language} onValueChange={setLanguage}>
-              <Label
-                htmlFor="lang-en"
-                className="flex items-center space-x-2 cursor-pointer hover:bg-accent p-2 rounded-md transition-colors duration-300"
+            <div className="space-y-1">
+              <button
+                className={`flex items-center gap-2 w-full cursor-pointer hover:bg-accent p-2 rounded-md transition-colors duration-300 ${language === "en" ? "bg-accent" : ""}`}
                 onClick={() => setLanguage("en")}
               >
-                <RadioGroupItem value="en" id="lang-en" />
-                <span className="flex items-center gap-2">
-                  <span className="text-lg">🇬🇧</span>
-                  <span>English</span>
-                </span>
-              </Label>
-              <Label
-                htmlFor="lang-sk"
-                className="flex items-center space-x-2 cursor-pointer hover:bg-accent p-2 rounded-md transition-colors duration-300"
+                <span className="text-lg">🇬🇧</span>
+                <span>English</span>
+              </button>
+              <button
+                className={`flex items-center gap-2 w-full cursor-pointer hover:bg-accent p-2 rounded-md transition-colors duration-300 ${language === "sk" ? "bg-accent" : ""}`}
                 onClick={() => setLanguage("sk")}
               >
-                <RadioGroupItem value="sk" id="lang-sk" />
-                <span className="flex items-center gap-2">
-                  <span className="text-lg">🇸🇰</span>
-                  <span>Slovenčina</span>
-                </span>
-              </Label>
-            </RadioGroup>
+                <span className="text-lg">🇸🇰</span>
+                <span>Slovenčina</span>
+              </button>
+            </div>
           </div>
 
           <div className="border-t pt-4 space-y-2">
