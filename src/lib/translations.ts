@@ -25,9 +25,9 @@ export const translations = {
     "about.travelingArtist": "Traveling Artist",
     "about.exhibitions": "Exhibitions",
     "about.bio":
-      "Martina Pauleová - Solárová (*1972) spent her first years in Handlová, later in Nedožery Brezany. She graduated from V.B. Nedožerský Grammar School in Prievidza (1990) and from the Academy of Fine Arts and Design in Bratislava - classical painting studio under Professor Ján Berger (1998). She lives and works in Bratislava with her husband and three sons.",
+      "I am Martina Pauleová - Solárová (*1972). I spent my first years in Handlová, later in Nedožery Brezany. I graduated from V.B. Nedožerský Grammar School in Prievidza (1990) and from the Academy of Fine Arts and Design in Bratislava - classical painting studio under Professor Ján Berger (1998). I live and work in Bratislava with my husband and three sons.",
     "about.bio2":
-      "The work of Martina Pauleová - Solárová is characterized by revealing a layer of reality imperceptible at first glance, whether still lifes, landscapes or portraits. She uncovers adventures with vibrations of infinite amplitude, seemingly static at first sight. These adventures do not force themselves upon the viewer. One must set out to seek them independently, with quiet patience, lest they dissolve with the stroke of an eager hand.",
+      "My work is characterized by revealing a layer of reality imperceptible at first glance, whether still lifes, landscapes or portraits. I uncover adventures with vibrations of infinite amplitude, seemingly static at first sight. These adventures do not force themselves upon the viewer. One must set out to seek them independently, with quiet patience, lest they dissolve with the stroke of an eager hand.",
     "about.downloadCV": "Download CV (PDF)",
     "about.artInterestText":
       "My artistic practice revolves around capturing the subtle interplay between memory, emotion, and visual experience. Through abstract and semi-abstract compositions, I explore how color and form can evoke deep psychological responses. Each piece is an investigation into the delicate balance between control and spontaneity, structure and chaos.",
@@ -117,9 +117,15 @@ export const translations = {
 
     // Gallery
     "works.selected": "Selected Works",
-    "works.instagram": "From Instagram",
+    "works.documents": "Documents",
+    "works.instagram": "Instagram",
     "works.instagramDescription": "A large number of my artworks live on my Instagram profile. Follow me there to see my latest creations, works in progress, and studio updates.",
     "works.follow": "Follow me on Instagram",
+    "works.document1.title": "Conversations of Colors and Clay",
+    "works.document1.description": "A visual exploration of colors and ceramic art",
+    "works.document2.title": "Polly's Project",
+    "works.document2.description": "An artistic journey through form and expression",
+    "works.viewDocument": "View PDF",
 
     // Common
     "common.readMore": "Read more",
@@ -142,9 +148,9 @@ export const translations = {
     "about.travelingArtist": "Cestujúci umelec",
     "about.exhibitions": "Výstavy",
     "about.bio":
-      "Martina Pauleová - Solárová (*1972) prvé roky prežila v Handlovej, neskôr v Nedožeroch Brezanoch. Vyštudovala na Gymnázium V.B. Nedožerského v Prievidzi (1990) a na VŠVU v Bratislave - ateliér klasickej maľby u profesora Jána Bergera (1998). S manželom a tromi synmi žije a pôsobí v Bratislave.",
+      "Som Martina Pauleová - Solárová (*1972). Prvé roky som prežila v Handlovej, neskôr v Nedožeroch Brezanoch. Vyštudovala som Gymnázium V.B. Nedožerského v Prievidzi (1990) a VŠVU v Bratislave - ateliér klasickej maľby u profesora Jána Bergera (1998). S manželom a tromi synmi žijem a pôsobím v Bratislave.",
     "about.bio2":
-      "Tvorbu Martiny Pauleovej - Solárovej charakterizuje odkrývanie na prvý pohľad nepostrehnuteľnej vrstvy reality, či už sú to zátišia, krajinomaľba alebo portréty. Odkrýva dobrodružstvá s vibráciami s nekonečnou amplitúdou, na prvý pohľad statické. Tieto dobrodružstvá sa k divákovi nedobýjajú násilím. Musí sa vybrať hľadať ich sám, s tichou trpezlivosťou, aby sa nerozplynuli šmahom dychtivej ruky.",
+      "Moju tvorbu charakterizuje odkrývanie na prvý pohľad nepostrehnuteľnej vrstvy reality, či už sú to zátišia, krajinomaľba alebo portréty. Odkrývam dobrodružstvá s vibráciami s nekonečnou amplitúdou, na prvý pohľad statické. Tieto dobrodružstvá sa k divákovi nedobýjajú násilím. Musí sa vybrať hľadať ich sám, s tichou trpezlivosťou, aby sa nerozplynuli šmahom dychtivej ruky.",
     "about.downloadCV": "Stiahnuť životopis (PDF)",
     "about.artInterestText":
       "Moja umelecká prax sa točí okolo zachytenia jemnej súhry medzi pamäťou, emóciami a vizuálnym zážitkom. Prostredníctvom abstraktných a polo-abstraktných kompozícií skúmam, ako farba a forma môžu vyvolať hlboké psychologické reakcie. Každé dielo je vyšetrovaním jemnej rovnováhy medzi kontrolou a spontánnosťou, štruktúrou a chaosom.",
@@ -236,9 +242,15 @@ export const translations = {
 
     // Gallery
     "works.selected": "Vybrané diela",
-    "works.instagram": "Z Instagramu",
+    "works.documents": "Dokumenty",
+    "works.instagram": "Instagram",
     "works.instagramDescription": "Veľké množstvo mojich umeleckých diel nájdete na mojom Instagrame. Sledujte ma tam a pozrite si moje najnovšie tvorby, rozpracované diela a novinky z ateliéru.",
     "works.follow": "Sledujte ma na Instagrame",
+    "works.document1.title": "Rozhovory farieb a hliny",
+    "works.document1.description": "Vizuálne skúmanie farieb a keramického umenia",
+    "works.document2.title": "Projekt Polly",
+    "works.document2.description": "Umelecká cesta cez formu a výraz",
+    "works.viewDocument": "Zobraziť PDF",
 
     // Common
     "common.readMore": "Čítať viac",
