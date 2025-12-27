@@ -42,7 +42,7 @@ export const translations = {
     "work.job1.title": "External Ceramics Lecturer",
     "work.job1.company": "Center for Folk Art Production",
     "work.job1.period": "July 2004 - Present",
-    "work.job1.description": "Teaching wheel throwing, developing creativity, introducing traditional folk crafts",
+    "work.job1.description": "Teaching wheel pottery, developing creativity, introducing traditional folk crafts",
     "work.job2.title": "Art Club Instructor",
     "work.job2.company": "1st Private Kindergarten Štvorlístok",
     "work.job2.period": "September 2011 - August 2017",
