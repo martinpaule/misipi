@@ -22,6 +22,7 @@ const AboutMe = () => {
   const { t } = useLanguage();
   const [expandedId, setExpandedId] = useState<number | null>(null);
   const [activeTab, setActiveTab] = useState<SectionKey>("profile");
+  const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
 
   // Preload all images after initial render
   useEffect(() => {
@@ -69,18 +70,18 @@ const AboutMe = () => {
 
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
               {/* Left: Image */}
-              <div className="animate-fade-in-up" style={staggerDelay(1, animationDelays.medium)}>
-                <div className="relative overflow-hidden rounded-3xl shadow-medium">
+              <div className="min-w-0 animate-fade-in-up" style={staggerDelay(1, animationDelays.medium)}>
+                <div className="relative w-full overflow-hidden rounded-3xl shadow-medium aspect-[4/3]">
                   <img
                     src={sectionImages[activeTab]}
                     alt={`${activeTab} section`}
-                    className="w-full h-auto object-cover transition-all duration-300"
+                    className="h-full w-full max-w-full object-cover transition-all duration-300"
                   />
                 </div>
               </div>
 
               {/* Right: Tab Content */}
-              <div className="animate-fade-in-up" style={staggerDelay(2, animationDelays.medium)}>
+              <div className="min-w-0 animate-fade-in-up" style={staggerDelay(2, animationDelays.medium)}>
                 {/* Profile Tab */}
                 <TabsContent value="profile" className="mt-0">
                   <div className="space-y-6">
@@ -138,23 +139,33 @@ const AboutMe = () => {
                     {residencies.map((residency) => (
                       <Card
                         key={residency.id}
-                        className="overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300 border-border/50 dark:border-white"
+                        className="min-w-0 overflow-hidden shadow-soft hover:shadow-medium transition-all duration-300 border-border/50 dark:border-white"
                       >
-                        <div className="p-6">
-                          <div className="flex items-center gap-2 text-primary mb-2">
-                            <MapPin className="w-4 h-4" />
-                            <h4 className="font-display font-semibold text-lg text-foreground">
+                        <div className="min-w-0 p-6">
+                          <div className="mb-2 flex min-w-0 items-start gap-2 text-primary">
+                            <MapPin className="mt-1 h-4 w-4 shrink-0" />
+                            <a
+                              href={residency.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="min-w-0 flex-1 break-words font-display font-semibold text-lg text-foreground hover:text-primary transition-colors"
+                            >
                               {t(residency.locationKey as TranslationKey)}
-                            </h4>
+                            </a>
+                            <ExternalLink className="mt-1 h-3.5 w-3.5 shrink-0 text-muted-foreground" />
                           </div>
                           <div className="flex items-center gap-2 text-muted-foreground mb-4">
                             <Calendar className="w-4 h-4" />
                             <span className="font-body text-sm">{t(residency.periodKey as TranslationKey)}</span>
                           </div>
 
-                          <div className="grid grid-cols-3 gap-2 mb-4">
+                          <div className="flex gap-2 mb-4 overflow-x-auto pb-2 scrollbar-thin">
                             {residency.images.map((image, imgIndex) => (
-                              <div key={imgIndex} className="relative overflow-hidden rounded-lg aspect-square">
+                              <div
+                                key={imgIndex}
+                                className="relative overflow-hidden rounded-lg aspect-square flex-shrink-0 w-28 h-28 md:w-36 md:h-36 cursor-pointer"
+                                onClick={() => setEnlargedImage(image)}
+                              >
                                 <img
                                   src={image}
                                   alt={`${t(residency.locationKey as TranslationKey)} artwork ${imgIndex + 1}`}
@@ -165,7 +176,9 @@ const AboutMe = () => {
                           </div>
 
                           <div className="font-body text-sm text-muted-foreground leading-relaxed space-y-2">
-                            <p>{t(residency.descriptionKey as TranslationKey)}</p>
+                            <p className={expandedId === residency.id ? "" : "line-clamp-1"}>
+                              {t(residency.descriptionKey as TranslationKey)}
+                            </p>
                             {expandedId === residency.id && (
                               <p className="animate-fade-in-up">{t(residency.extendedDescriptionKey as TranslationKey)}</p>
                             )}
@@ -265,6 +278,18 @@ const AboutMe = () => {
           </Tabs>
         </div>
       </div>
+
+      <Dialog open={!!enlargedImage} onOpenChange={() => setEnlargedImage(null)}>
+        <DialogContent className="max-w-4xl p-2 bg-background border-none">
+          {enlargedImage && (
+            <img
+              src={enlargedImage}
+              alt="Enlarged artwork"
+              className="w-full h-auto max-h-[85vh] object-contain rounded-lg"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };

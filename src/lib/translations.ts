@@ -67,24 +67,30 @@ export const translations = {
     "workshop3.level": "Beginners",
 
     // Residencies
-    "residency1.location": "Barcelona, Spain",
-    "residency1.period": "Spring 2024",
+    "residency1.location": "FishFactory — Stöðvarfjörður, Iceland",
+    "residency1.period": "March 2024",
     "residency1.description":
-      "A transformative three-month residency exploring the relationship between Mediterranean light and abstract form. Working in a converted industrial space near the Gothic Quarter, I developed a new series combining organic shapes with architectural elements inspired by Gaudí's vision.",
+      "My first residency at the Fish Factory in eastern Iceland. I worked in a shared studio by the fjord, surrounded by snow-covered mountains and the wild Atlantic ocean. The landscape and the light shaped everything I made there.",
     "residency1.extendedDescription":
-      "The residency allowed me to experiment with new color palettes inspired by the city's tiles and mosaics. Daily walks through the Barri Gòtic influenced the layering techniques in my work, creating depth through historical accumulation.",
-    "residency2.location": "Kyoto, Japan",
-    "residency2.period": "Fall 2023",
+      "I spent a month painting and drawing, inspired by the colors of the sea and sky. I also explored watercolor techniques on newspaper, mixing local textures with my own style. The community of artists at the Fish Factory made it a very special experience.",
+    "residency2.location": "FishFactory — Stöðvarfjörður, Iceland",
+    "residency2.period": "March 2025",
     "residency2.description":
-      "An immersive experience in traditional Japanese aesthetics and contemporary art dialogue. The residency at a temple-adjacent studio provided unique insights into wabi-sabi philosophy and its application to abstract painting.",
+      "I returned to the Fish Factory for a second time. This visit was about going deeper — I focused on watercolor techniques and explored the Icelandic landscape through painting. The quiet winter days gave me space to reflect and create.",
     "residency2.extendedDescription":
-      "Working alongside local artists, I explored the concept of ma (negative space) and its role in composition. The changing autumn colors and temple gardens deeply influenced my approach to subtle gradation and atmospheric effects.",
-    "residency3.location": "Reykjavik, Iceland",
-    "residency3.period": "Winter 2023",
+      "I experimented with watercolor on different surfaces, creating vivid purple and blue compositions inspired by the sea. I spent time in the studio workspace developing new pieces, and explored the small fishing village — its bus stops, roads, and coastal views became part of my creative journey.",
+    "residency3.location": "FishFactory — Stöðvarfjörður, Iceland",
+    "residency3.period": "February 2026",
     "residency3.description":
-      "A winter residency focused on light, darkness, and the sublime landscape. The extreme conditions and minimal daylight hours pushed my work toward more introspective and atmospheric directions.",
+      "My third residency at the Fish Factory brought together two projects — the 'Flying Time' paintings and crocheted installations. I explored movement, memory, and craft in new directions.",
     "residency3.extendedDescription":
-      "The volcanic landscape and northern lights provided endless inspiration for color relationships and emotional intensity. Working in near-darkness for much of the day created a meditative studio practice that transformed my approach to painting.",
+      "The 'Flying Time' series uses bold colors in radiating compositions on large canvases. Alongside painting, I created crocheted installations — a sea creature in the studio window, kitchen pieces, and detailed textile works. The group of artists made this residency especially collaborative and inspiring.",
+    "residency4.location": "Saikoneon — Fujikawaguchiko, Japan",
+    "residency4.period": "September 2026",
+    "residency4.description":
+      "An upcoming artist residency in the lakeside town of Fujikawaguchiko, Japan, at the foot of Mount Fuji.",
+    "residency4.extendedDescription":
+      "More details coming soon.",
 
     // Press Articles
     "article1.title": "Retrospective Exhibition",
@@ -125,6 +131,8 @@ export const translations = {
     "works.document1.description": "A visual exploration of colors and ceramic art",
     "works.document2.title": "Polly's Project",
     "works.document2.description": "An artistic journey through form and expression",
+    "works.document3.title": "Flying Time",
+    "works.document3.description": "Memories of departed loved ones expressed through shape and color",
     "works.viewDocument": "View PDF",
 
     // Common
@@ -190,24 +198,30 @@ export const translations = {
     "workshop3.level": "Začiatočníci",
 
     // Residencies
-    "residency1.location": "Barcelona, Španielsko",
-    "residency1.period": "Jar 2024",
+    "residency1.location": "FishFactory — Stöðvarfjörður, Island",
+    "residency1.period": "Marec 2024",
     "residency1.description":
-      "Transformačná trojmesačná rezidenčná pobyt skúmajúca vzťah medzi stredomorským svetlom a abstraktnou formou. Pracujúc v prestavenom priemyselnom priestore pri Gotickom štvrte, som vyvinula novú sériu kombinujúcu organické tvary s architektonickými prvkami inšpirovanými Gaudího víziou.",
+      "Moja prvá rezidencia vo Fish Factory na východnom Islande. Pracovala som v spoločnom ateliéri pri fjorde, obklopená zasneženými horami a divokým oceánom.",
     "residency1.extendedDescription":
-      "Rezidenčný pobyt mi umožnil experimentovať s novými farebnými paletami inšpirovanými mestskými dlaždicami a mozaikami. Denné prechádzky cez Barri Gòtic ovplyvnili techniky vrstvenia v mojej práci, vytvárajúc hĺbku prostredníctvom historickej akumulácie.",
-    "residency2.location": "Kjóto, Japonsko",
-    "residency2.period": "Jeseň 2023",
+      "Krajina a svetlo ovplyvnili všetko, čo som tam vytvorila. Strávila som mesiac maľovaním a kreslením, inšpirovaná farbami mora a oblohy. Skúšala som aj akvarel na novinách a miešala miestne textúry s mojím štýlom. Komunita umelcov vo Fish Factory z toho urobila výnimočný zážitok.",
+    "residency2.location": "FishFactory — Stöðvarfjörður, Island",
+    "residency2.period": "Marec 2025",
     "residency2.description":
-      "Ponorná skúsenosť v tradičnej japonskej estetike a dialógu súčasného umenia. Rezidenčný pobyt v štúdiu priľahlom k chrámu poskytol jedinečné pohľady na filozofiu wabi-sabi a jej aplikáciu na abstraktnú maľbu.",
+      "Vrátila som sa do Fish Factory druhýkrát. Tentokrát som sa sústredila na akvarelovú techniku a skúmala islandskú krajinu cez maľbu. Tiché zimné dni mi dali priestor na premýšľanie a tvorbu.",
     "residency2.extendedDescription":
-      "Pracujúc s miestnymi umelcami, som skúmala koncept ma (negatívny priestor) a jeho úlohu v kompozícii. Menšie sa jesenné farby a chrámové záhrady hlboko ovplyvnili môj prístup k jemným gradáciám a atmosférickým efektom.",
-    "residency3.location": "Reykjavík, Island",
-    "residency3.period": "Zima 2023",
+      "Experimentovala som s akvarelom na rôznych povrchoch a vytvárala živé fialové a modré kompozície inšpirované morom. Trávila som čas v ateliéri prácou na nových dielach a objavovala rybársku dedinu — jej zastávky, cesty a pobrežné výhľady sa stali súčasťou mojej tvorivej cesty.",
+    "residency3.location": "FishFactory — Stöðvarfjörður, Island",
+    "residency3.period": "Február 2026",
     "residency3.description":
-      "Zimný rezidenčný pobyt zameraný na svetlo, tmu a vznešenú krajinu. Extrémne podmienky a minimálne hodiny denného svetla posunuli moju prácu k introspekatívnejším a atmosférickejším smerom.",
+      "Moja tretia rezidencia vo Fish Factory spojila dva projekty — maľby 'Flying Time' a háčkované inštalácie. Skúmala som pohyb, pamäť a remeslo novými smermi.",
     "residency3.extendedDescription":
-      "Sopečná krajina a polárna žiara poskytli nekonečnú inšpiráciu pre vzťahy farieb a emocionálnu intenzitu. Práca v takmer tme počas väčšiny dňa vytvorila meditatívnu ateliérovú prax, ktorá transformovala môj prístup k maľbe.",
+      "Séria 'Flying Time' používa výrazné farby v lúčovitých kompozíciách na veľkých plátnach. Popri maľbe som vytvárala háčkované inštalácie — morského tvora v okne ateliéru, kuchynské diela a detailné textilné práce. Skupina umelcov urobila túto rezidenciu obzvlášť spolupracujúcou a inšpiratívnou.",
+    "residency4.location": "Saikoneon — Fujikawaguchiko, Japonsko",
+    "residency4.period": "September 2026",
+    "residency4.description":
+      "Pripravovaná umelecká rezidencia v mestečku Fujikawaguchiko v Japonsku, na úpätí hory Fuji.",
+    "residency4.extendedDescription":
+      "Viac detailov čoskoro.",
 
     // Press Articles
     "article1.title": "Výstava Retrospektíva",
@@ -249,6 +263,8 @@ export const translations = {
     "works.document1.description": "Vizuálne skúmanie farieb a keramického umenia",
     "works.document2.title": "Projekt Polly",
     "works.document2.description": "Umelecká cesta cez formu a výraz",
+    "works.document3.title": "Letiaci Čas",
+    "works.document3.description": "Spomienky na zosnulých blízkych vyjadrené tvarom a farbou",
     "works.viewDocument": "Zobraziť PDF",
 
     // Common

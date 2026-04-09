@@ -6,6 +6,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { artworks, staggerDelay, animationDelays } from "@/config";
 import conversationsOfColorsAndClayPdf from "@/assets/documents/Conversations_of_Colors_and_Clay.pdf";
 import pollysProjectPdf from "@/assets/documents/Pollys_Project.pdf";
+import flyingTimePdf from "@/assets/documents/Flying_Time.pdf";
 
 const documents = [
   {
@@ -19,6 +20,12 @@ const documents = [
     titleKey: "works.document2.title" as const,
     descriptionKey: "works.document2.description" as const,
     file: pollysProjectPdf,
+  },
+  {
+    id: 3,
+    titleKey: "works.document3.title" as const,
+    descriptionKey: "works.document3.description" as const,
+    file: flyingTimePdf,
   },
 ];
 
